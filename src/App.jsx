@@ -4,13 +4,14 @@ import DrinkForm from './components/DrinkForm'
 import { CategoriesProvider } from './context/CategoriesProvider'
 import { DrinksProvider } from './context/DrinksProvider'
 import DrinksList from './components/DrinksList'
+import DrinkModal from './components/DrinkModal'
 
 function App() {
 
   return (
     <DrinksProvider>
       <CategoriesProvider>
-        <header className='py-5'>
+        <header className='py-3'>
           <h1>Buscador de Bebidas</h1>
         </header>
 
@@ -18,6 +19,8 @@ function App() {
           <DrinkForm />
 
           <DrinksList />
+
+          <DrinkModal/>
         </Container>
       </CategoriesProvider>
     </DrinksProvider>
